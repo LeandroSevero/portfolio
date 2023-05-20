@@ -23,13 +23,13 @@ window.onload = function() {
     var currentVideo = videos[currentVideoIndex];
     var nextVideoIndex = (currentVideoIndex + 1) % videos.length;
     var nextVideo = videos[nextVideoIndex];
-
+    
     currentVideo.style.opacity = 0;
     nextVideo.style.opacity = 1;
 
     currentVideoIndex = nextVideoIndex;
   }
-
+  playNextVideo(); 
   setInterval(playNextVideo, 5000); // Troca de vídeo a cada 5 segundos (5000 milissegundos)
 
   var photos = document.querySelectorAll("#photo-container img");
@@ -45,6 +45,6 @@ window.onload = function() {
 
     currentPhotoIndex = nextPhotoIndex;
   }
-
+  showNextPhoto();
   setInterval(showNextPhoto, 5000); // Troca de foto a cada 5 segundos (5000 milissegundos)
 };

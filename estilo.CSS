@@ -26,3 +26,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+#container {
+  position: relative;
+  width: 500px; /* Ajuste o valor de acordo com o tamanho desejado */
+  height: 300px; /* Ajuste o valor de acordo com o tamanho desejado */
+  overflow: hidden;
+}
+
+#imagem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 2s linear;
+}

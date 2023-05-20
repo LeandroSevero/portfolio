@@ -1,5 +1,5 @@
 window.onload = function() {
-  var imagem = document.getElementById("imagem");
+  var imagem = document.getElementById("imagem-flutuando-js");
   var containerWidth = document.getElementById("container").offsetWidth;
   var containerHeight = document.getElementById("container").offsetHeight;
   

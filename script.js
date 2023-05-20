@@ -34,10 +34,12 @@ window.onload = function() {
   }
 
   // Exibir o primeiro vídeo imediatamente ao carregar o site
-  videos[currentVideoIndex].style.opacity = 1;
-  videos[currentVideoIndex].play();
+  videos[currentVideoIndex].addEventListener("loadeddata", function() {
+    videos[currentVideoIndex].style.opacity = 1;
+    videos[currentVideoIndex].play();
+  });
 
-  setInterval(playNextVideo, 0); // Troca de vídeo a cada 5 segundos (5000 milissegundos)
+  setInterval(playNextVideo, 5000); // Troca de vídeo a cada 5 segundos (5000 milissegundos)
 
   var photos = document.querySelectorAll("#photo-container img");
   var currentPhotoIndex = 0;

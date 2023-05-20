@@ -29,7 +29,7 @@
 
 #imagem-flutuando {
   position: absolute;
-  width: 100px; /* Ajuste o valor de acordo com o tamanho desejado */
+  width: 300px; /* Ajuste o valor de acordo com o tamanho desejado */
   height: 30px; /* Ajuste o valor de acordo com o tamanho desejado */
   overflow: hidden;
 }

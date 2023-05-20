@@ -23,52 +23,34 @@ window.onload = function() {
     var currentVideo = videos[currentVideoIndex];
     var nextVideoIndex = (currentVideoIndex + 1) % videos.length;
     var nextVideo = videos[nextVideoIndex];
-
+  
     currentVideo.style.opacity = 0;
     currentVideo.pause();
     currentVideo.currentTime = 0;
-
+  
     nextVideo.style.opacity = 1;
     nextVideo.play();
-
+  
     currentVideoIndex = nextVideoIndex;
+  
+    // Transição suave entre vídeos
+    var fadeInterval = setInterval(function() {
+      if (nextVideo.style.opacity >= 1) {
+        clearInterval(fadeInterval);
+        return;
+      }
+  
+      currentVideo.style.opacity -= 0.05;
+      nextVideo.style.opacity = parseFloat(nextVideo.style.opacity) + 0.05;
+    }, 100);
   }
-
+  
   // Exibir o primeiro vídeo imediatamente ao carregar o site
   videos[currentVideoIndex].addEventListener("loadeddata", function() {
     videos[currentVideoIndex].style.opacity = 1;
     videos[currentVideoIndex].play();
   });
-
-  // Transição suave entre vídeos
-  function crossfadeVideos() {
-    var currentVideo = videos[currentVideoIndex];
-    var nextVideoIndex = (currentVideoIndex + 1) % videos.length;
-    var nextVideo = videos[nextVideoIndex];
-
-    currentVideo.style.opacity = 1;
-    nextVideo.style.opacity = 0;
-    nextVideo.currentTime = 0;
-    nextVideo.play();
-
-    var fadeInterval = setInterval(function() {
-      currentVideo.style.opacity -= 0.05;
-      nextVideo.style.opacity = 1 - currentVideo.style.opacity;
-
-      if (currentVideo.style.opacity <= 0) {
-        currentVideo.pause();
-        clearInterval(fadeInterval);
-      }
-    }, 100);
-
-    currentVideoIndex = nextVideoIndex;
-  }
-
-  // Reproduzir o próximo vídeo quando o anterior terminar
-  videos[currentVideoIndex].addEventListener("ended", function() {
-    crossfadeVideos();
-  });
-
+  
   var photos = document.querySelectorAll("#photo-container img");
   var currentPhotoIndex = 0;
 

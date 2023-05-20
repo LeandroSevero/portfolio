@@ -1,18 +1,14 @@
 window.onload = function() {
-  var letter = document.getElementById("letter");
+  var imagem = document.getElementById("imagem");
+  var containerWidth = document.getElementById("container").offsetWidth;
+  var containerHeight = document.getElementById("container").offsetHeight;
   
-  function moveLetter() {
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
-    var newLeft = Math.floor(Math.random() * (windowWidth - letter.offsetWidth));
-    var newTop = Math.floor(Math.random() * (windowHeight - letter.offsetHeight));
-    var colors = ["red", "green", "blue", "yellow", "orange", "purple"];
-    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+  function moverImagem() {
+    var novoLeft = Math.floor(Math.random() * (containerWidth - imagem.width));
+    var novoTop = Math.floor(Math.random() * (containerHeight - imagem.height));
     
-    letter.style.left = newLeft + "px";
-    letter.style.top = newTop + "px";
-    letter.style.color = randomColor;
+    imagem.style.transform = "translate(" + novoLeft + "px, " + novoTop + "px)";
   }
   
-  setInterval(moveLetter, 2000); // Muda a posição e a cor a cada 2 segundos (
-}
+  setInterval(moverImagem, 3000); // Move a imagem a cada 3 segundos (3000 milissegundos)
+};

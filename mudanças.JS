@@ -14,5 +14,5 @@ window.onload = function() {
     letter.style.color = randomColor;
   }
   
-  setInterval(moveLetter, 2000); // Muda a posição e a cor a cada 2 segundos (2000 milissegundos)
-};
+  setInterval(moveLetter, 2000); // Muda a posição e a cor a cada 2 segundos (
+}

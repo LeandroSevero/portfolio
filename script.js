@@ -1,11 +1,12 @@
 window.onload = function() {
   var imagem = document.getElementById("imagem");
+  var headerHeight = document.getElementById("header").offsetHeight;
   var windowWidth = window.innerWidth;
-  var windowHeight = window.innerHeight;
+  var windowHeight = window.innerHeight - headerHeight;
   
   function moverImagem() {
-    var novoLeft = Math.floor(Math.random() * windowWidth);
-    var novoTop = Math.floor(Math.random() * windowHeight);
+    var novoLeft = windowWidth - imagem.offsetWidth;
+    var novoTop = headerHeight + Math.floor(Math.random() * windowHeight);
     
     imagem.style.transform = "translate(" + novoLeft + "px, " + novoTop + "px)";
   }

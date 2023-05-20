@@ -4,9 +4,10 @@ body {
 }
 
 #imagem {
+  width: 50%;
   position: absolute;
   opacity: 0.7;
-  transition: transform 5s linear;
+  transition: transform 1s linear;
 }
 
 #header, #footer {

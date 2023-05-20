@@ -40,9 +40,33 @@ window.onload = function() {
     videos[currentVideoIndex].play();
   });
 
-  // Reproduzir o próximo vídeo imediatamente após o término do atual
+  // Transição suave entre vídeos
+  function crossfadeVideos() {
+    var currentVideo = videos[currentVideoIndex];
+    var nextVideoIndex = (currentVideoIndex + 1) % videos.length;
+    var nextVideo = videos[nextVideoIndex];
+
+    currentVideo.style.opacity = 1;
+    nextVideo.style.opacity = 0;
+    nextVideo.currentTime = 0;
+    nextVideo.play();
+
+    var fadeInterval = setInterval(function() {
+      currentVideo.style.opacity -= 0.05;
+      nextVideo.style.opacity = 1 - currentVideo.style.opacity;
+
+      if (currentVideo.style.opacity <= 0) {
+        currentVideo.pause();
+        clearInterval(fadeInterval);
+      }
+    }, 100);
+
+    currentVideoIndex = nextVideoIndex;
+  }
+
+  // Reproduzir o próximo vídeo quando o anterior terminar
   videos[currentVideoIndex].addEventListener("ended", function() {
-    playNextVideo();
+    crossfadeVideos();
   });
 
   var photos = document.querySelectorAll("#photo-container img");

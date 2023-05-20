@@ -26,6 +26,7 @@ window.onload = function() {
 
     currentVideo.style.opacity = 0;
     currentVideo.pause();
+    currentVideo.currentTime = 0;
 
     nextVideo.style.opacity = 1;
     nextVideo.play();

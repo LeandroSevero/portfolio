@@ -10,5 +10,8 @@ window.onload = function() {
     imagem.style.transform = "translate(" + novoLeft + "px, " + novoTop + "px)";
   }
   
+  // Mover a imagem imediatamente ao carregar o site
+  moverImagem();
+  
   setInterval(moverImagem, 5000); // Move a imagem a cada 5 segundos (5000 milissegundos)
 };

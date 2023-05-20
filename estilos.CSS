@@ -1,19 +1,19 @@
-body {
+#body {
   margin: 0;
   padding: 0;
 }
 
-header, footer {
+#header, #footer {
   background-color: lightblue;
   padding: 20px;
   text-align: center;
 }
 
-nav {
+#nav {
   margin-bottom: 20px;
 }
 
-nav a {
+#nav a {
   margin: 0 10px;
   text-decoration: none;
   color: white;

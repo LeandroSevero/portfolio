@@ -7,7 +7,7 @@ body {
   width: 50%;
   position: absolute;
   opacity: 0.7;
-  transition: transform 1s linear;
+  transition: transform 3s linear;
 }
 
 #header, #footer {

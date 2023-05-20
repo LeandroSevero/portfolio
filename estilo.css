@@ -4,7 +4,7 @@ body {
 }
 
 #imagem {
-  width: 50%;
+  width: 30vh;
   position: absolute;
   opacity: 0.7;
   transition: transform 3s linear;

@@ -1,6 +1,11 @@
-#body {
-  margin: 0;
-  padding: 0;
+body {
+  overflow: hidden;
+}
+
+#imagem {
+  position: fixed;
+  opacity: 0.7;
+  transition: transform 5s linear;
 }
 
 #header, #footer {
@@ -19,25 +24,5 @@
   color: white;
 }
 
-#letter {
-  position: absolute;
-  font-size: 48px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-#imagem-flutuando {
-  position: absolute;
-  width: 300px; /* Ajuste o valor de acordo com o tamanho desejado */
-  height: 30px; /* Ajuste o valor de acordo com o tamanho desejado */
-  overflow: hidden;
-}
 
-#imagem {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform 2s linear;
-}

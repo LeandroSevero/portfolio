@@ -10,5 +10,5 @@ window.onload = function() {
     imagem.style.transform = "translate(" + novoLeft + "px, " + novoTop + "px)";
   }
   
-  setInterval(moverImagem, 3000); // Move a imagem a cada 3 segundos (3000 milissegundos)
+  setInterval(moverImagem, 1000); // Move a imagem a cada 3 segundos (3000 milissegundos)
 };

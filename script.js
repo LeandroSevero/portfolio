@@ -38,7 +38,6 @@ window.onload = function() {
   videos[currentVideoIndex].play();
 
   setInterval(playNextVideo, 5000); // Troca de vídeo a cada 5 segundos (5000 milissegundos)
-};
 
   var photos = document.querySelectorAll("#photo-container img");
   var currentPhotoIndex = 0;
@@ -53,6 +52,9 @@ window.onload = function() {
 
     currentPhotoIndex = nextPhotoIndex;
   }
+  
+  // Exibir a primeira foto imediatamente ao carregar o site
   showNextPhoto();
+
   setInterval(showNextPhoto, 5000); // Troca de foto a cada 5 segundos (5000 milissegundos)
 };

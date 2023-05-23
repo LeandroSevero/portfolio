@@ -15,7 +15,7 @@ body {
 }
 
 #footer {
-  background-color: rgb(88, 65, 189);
+  background-color: rgba(201, 3, 3, 0);
   text-align: center;
   margin-top: -20px;
   position: fixed;
@@ -27,7 +27,7 @@ body {
 
 
 #nav {
-  margin-bottom: -20px;
+  margin-bottom: 20px;
 }
 
 #nav a {

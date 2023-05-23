@@ -3,13 +3,13 @@ html{
   padding: 0;
   max-width: 100%;
   max-height: 1200px;
-  background-color:aqua;
+  background-color:rgb(161, 161, 161);
   box-sizing: border-box;
 }
 
 
 #header{
-  background-color: rgb(185, 185, 185);
+  background-color: lightblue;
   padding: 20px;
   text-align: center;
   position: fixed;

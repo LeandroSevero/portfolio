@@ -50,6 +50,7 @@ body {
   width: 640px;
   height: 480px;
   overflow: hidden;
+  text-align: center;
 }
 
 #photo-container img {

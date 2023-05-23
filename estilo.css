@@ -14,7 +14,7 @@ html{
   top: 0;
   left: 0;
   width: 100%;
-  height: 300pX;
+  height: 80pX;
 }
 
 #footer {
@@ -22,10 +22,10 @@ html{
   padding: 20px;
   text-align: center;
   position: fixed;
-  bottom: 0;
+  bottom: -1;
   left: 0;
   width: 100%;
-  height: 300pX;
+  height: 80pX;
 }
 
 

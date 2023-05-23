@@ -15,8 +15,9 @@ body {
 }
 
 #footer {
-  background-color: lightblue;
+  background-color: rgb(88, 65, 189);
   text-align: center;
+  margin-top: 10px;
   position: fixed;
   bottom: 0;
   left: 0;

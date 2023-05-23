@@ -3,12 +3,10 @@ html{
   padding: 0;
   max-width: 100%;
   max-height: 1200px;
-  box-sizing: border-box;
 }
 
 #header{
   background-color: lightblue;
-  padding: 20px;
   text-align: center;
   position: fixed;
   top: 0;
@@ -18,8 +16,7 @@ html{
 }
 
 #footer {
-  background-color: rgb(0, 0, 0);
-  padding: 20px;
+  background-color: rgb(128, 13, 13);
   text-align: center;
   position: fixed;
   bottom: -1;

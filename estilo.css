@@ -2,8 +2,8 @@ html{
   margin: 0;
   padding: 0;
   max-width: 100%;
-  max-height: 500vh;
-  color: blueviolet;
+  max-height: 1200px;
+  background-color:aqua;
   box-sizing: border-box;
 }
 

@@ -24,17 +24,6 @@ body {
   height: 80px;
 }
 
-
-#nav {
-  margin-bottom: 20px;
-}
-
-#nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: white;
-}
-
 #video-container {
   position: relative;
   width: 640px;

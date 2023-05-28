@@ -1,69 +1,60 @@
 body {
   margin: 0;
-  padding: 0;
-  height: 1200px;
 }
 
 #header {
   background-color: lightblue;
   text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 80px;
+  height: 50px;
 }
 
-#footer {
+#infoleandro1{
+  background-color: rgb(94, 21, 21);
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+#infoleandro2{
+  background-color: rgb(192, 192, 192);
+  width: 35%;
+  height: 500px;
+  position: absolute;
+}
+
+#infoleandro3{
+  background-color: rgb(23, 41, 21);
+  width: 35%;
+  height: 500px;
+  left: 30%;
+  position: absolute;
+}
+#infoleandro4{
+  background-color: rgb(35, 31, 77);
+  width: 35%;
+  height: 500px;
+  left: 65%;
+  position: absolute;
+}
+
+#header nav a {
+  position: relative;
+  text-decoration:line-through;
+  color: black;
+  top: 15px;
+  padding: 10px;
+}
+
+#nav :hover{
+  text-decoration: none;
+}
+
+footer {
   background-color: lightblue;
   text-align: center;
-  margin-top: 10px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  margin-top: -25px;
   width: 100%;
-  height: 80px;
+  height: 150px;
 }
-
-
-#nav {
-  margin-bottom: 20px;
-}
-
-#nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: white;
-}
-
-#video-container {
-  position: relative;
-  width: 640px;
-  height: 480px;
-  overflow: hidden;
-}
-
-#video-container video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-}
-#photo-container {
-  position: relative;
-  width: 640px;
-  height: 480px;
-  overflow: hidden;
-  text-align: center;
-}
-
-#photo-container img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-}
-
 
